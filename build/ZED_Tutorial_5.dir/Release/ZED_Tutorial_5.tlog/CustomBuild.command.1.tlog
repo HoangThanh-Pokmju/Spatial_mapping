@@ -1,0 +1,10 @@
+^E:\ZED_2\SPATIAL_MAPPING\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Zed_2/Spatial_mapping -BE:/Zed_2/Spatial_mapping/build --check-stamp-file E:/Zed_2/Spatial_mapping/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
